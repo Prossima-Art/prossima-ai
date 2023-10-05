@@ -102,6 +102,9 @@ h1 {
   .top-section .right {
     display: none;
   }
+  #header {
+    width: 100%;
+  }
 
   .top-section .left {
     text-align: center;
