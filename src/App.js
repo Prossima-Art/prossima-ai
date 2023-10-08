@@ -6,6 +6,7 @@ import Img3 from "./components/assets/img-3.png";
 import Lottie from "lottie-react";
 import AnimationData from "./components/assets/Animation.json";
 import {Logo} from "./components/logo.jsx";
+import { ModalContato } from "./components/offcanvas/Offcanvas";
 
 function App() {
   const observer = new IntersectionObserver(entries => {
@@ -38,7 +39,7 @@ function App() {
           alt="Prossima Art AI logo"
           />
       </div>
-      <button>Contact Us</button>
+      <ModalContato/>
 
     </header>
 
@@ -54,9 +55,9 @@ function App() {
         <img src={Img3} alt="..." data-img id="img-3" />
       </div>
       <section className="top-section full-screen-section">
-        <div className="left">
-          <h1>Innovations for B2B</h1>
-          <p>
+        <div className="left mt-5">
+          <h1 className="titleH1">Innovations for B2B</h1>
+          <p className="Paragraf">
             The only platform that gives continuous service API for interactions across platforms.
           </p>
         </div>
@@ -69,21 +70,21 @@ function App() {
         </div>
       </section>
       <section className="full-screen-section first-main-section">
-        <h1>Completely Visual</h1>
-        <p>Never touch the command line, from provision to production.</p>
+        <h1 className="titleH1">Completely Visual</h1>
+        <p className="Paragraf">Never touch the command line, from provision to production.</p>
         <div data-img-to-show="#img-1"></div>
       </section>
       <section className="full-screen-section">
-        <h1>Full Stack</h1>
-        <p>
+        <h1 className="titleH1">Full Stack</h1>
+        <p className="Paragraf"> 
           Never manage infrastructure again. One click gets you: a database,
           APIs, deployments, hosting, etc.
         </p>
         <div data-img-to-show="#img-2"></div>
       </section>
       <section className="full-screen-section">
-        <h1>Sentiment analysis</h1>
-        <p>Organizations can leverage this analysis to gain insights into the perceptions and sentiments surrounding their brand or product.</p>
+        <h1 className="titleH1">Sentiment analysis</h1>
+        <p className="Paragraf">Organizations can leverage this analysis to gain insights into the perceptions and sentiments surrounding their brand or product.</p>
         <div data-img-to-show="#img-3"></div>
       </section>
     </>
